@@ -98,9 +98,9 @@ function App() {
     // gsap.to('.wordBuild', { ease: "power1.inOut", delay: 2, y: 100 });
     // gsap.to('.wordShaping', { ease: "power1.inOut", delay: 3, y: 100 });
 
-    gsap.to(".word .word60", { ease: "power1.inOut", delay: 1, y: 100 });
-    gsap.to(".word .wordBuild", { ease: "power1.inOut", delay: 2, y: 100 });
-    gsap.to(".word .wordShaping", { ease: "power1.inOut", delay: 3, y: 100 });
+    // gsap.to(".word .word60", { ease: "power1.inOut", delay: 1, y: 100 });
+    // gsap.to(".word .wordBuild", { ease: "power1.inOut", delay: 2, y: 100 });
+    // gsap.to(".word .wordShaping", { ease: "power1.inOut", delay: 3, y: 100 });
 
     // let tl = gsap.timeline({ease:'linear'})
     // tl
@@ -206,6 +206,9 @@ function App() {
           <div className="rightedWord">
             <h1>Legacy</h1>
           </div>
+        </div>
+         <div className="secondBoatImageContainer">
+          <img className="firstBoatImage" src={secondImage} alt="" />
         </div>
       </div>
       <div className="thirdContainer" ></div>

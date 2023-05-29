@@ -116,12 +116,20 @@ $secondColor: #e1921a;
   z-index: -3;
 }
 
-// .secondBoatImageContainer {
-//   position: relative;
-//   left: 0;
-//   top: -100vh;
-//   z-index: -3;
-// }
+.secondBoatImageContainer {
+  position: absolute;
+  right: 0;
+  top: -100vh;
+  z-index: -3;
+  width:700px;
+  height: 15px;
+}
+
+.secondBoatImage {
+  width:20px;
+  height: 20px;
+
+}
 
 
 
