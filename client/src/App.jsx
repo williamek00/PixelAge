@@ -4,6 +4,7 @@ import Lottie from "react-lottie";
 import Image from "./assets/img/24.png";
 import firstImage from "./assets/img/homepage/519x788.jpg";
 import secondImage from "./assets/img/homepage/816x459.jpg";
+import thirdImage from "./assets/img/homepage/708x531.jpg";
 import Star from "./assets/img/star.png";
 import animationData from "./assets/videos/lottie-1366x350.json";
 
@@ -190,6 +191,9 @@ function App() {
         <div className="firstBoatImageContainer">
           <img className="firstBoatImage" src={firstImage} alt="" />
         </div>
+        <div className="thirdBoatImageContainer">
+          <img className="thirdBoatImage" src={thirdImage} alt="" />
+        </div>
         {/* <div className="secondBoatImageContainer">
           <img className="firstBoatImage" src={secondImage} alt="" />
         </div> */}
@@ -208,7 +212,7 @@ function App() {
           </div>
         </div>
          <div className="secondBoatImageContainer">
-          <img className="firstBoatImage" src={secondImage} alt="" />
+          <img className="secondBoatImage" src={secondImage} alt="" />
         </div>
       </div>
       <div className="thirdContainer" ></div>
