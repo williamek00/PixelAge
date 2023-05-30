@@ -1,19 +1,16 @@
 $firstColor: #46484c;
 $secondColor: #e1921a;
-
+$thirdColor: #889fb5;
+$fourthColor: #ffff;
 * {
   margin: 0;
 }
 
 .container {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden; 
-  height: 100vh;
-  z-index: 3;
-
+  height: 824px;
 }
 
 .imgBackgroundContainer {
@@ -34,10 +31,8 @@ $secondColor: #e1921a;
 .lottieAnimationContainer {
   position: absolute;
   bottom: 0;
-  height: 52%;
   width: 100%;
-  z-index: 3;
-
+  height: 52%;
 }
 
 .wordContainer {
@@ -49,47 +44,206 @@ $secondColor: #e1921a;
   font-size: 2.7rem;
   font-family: "Lato", sans-serif;
   margin-right: 9cm;
-  z-index: 3;
   position: relative;
+  padding-top: 100px;
 }
 
-.word {
+.wordLine {
+  display: block;
+  white-space: nowrap;
   color: $firstColor;
-  line-height: 1.1;
-  padding-top: 100px;
-  &60 {
-    line-height: 1.1;
-  }
+}
 
-  &Build {
-    color: $secondColor;
-    font-weight: 500;
-  }
+.word60 {
+  display: inline-block;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
 
-  &Shaping {
-    font-weight: 500;
-  }
+.word70 {
+  display: inline-block;
+  margin: 0;
+}
+
+.word80 {
+  display: inline-block;
+  margin: 0;
+}
+
+.wordBuild1,
+.wordBuild2 {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 500;
+  color: $secondColor;
+}
+
+.wordShaping1,
+.wordShaping2 {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 500;
+  color: $firstColor;
+}
+
+.word60:last-child {
+  margin-right: 0;
+}
+
+.word70:last-child {
+  margin-right: 0;
+}
+
+.word80:last-child {
+  margin-right: 0;
+}
+
+.wordBuild1:last-child,
+.wordBuild2:last-child {
+  margin-right: 0;
+}
+
+.wordShaping1:last-child,
+.wordShaping2:last-child {
+  margin-right: 0;
+}
+
+.starContainer {
+  position: relative;
+  left: 50px;
+  width: 20px;
+}
+
+.starContainer1 {
+  position: relative;
+  left: 200px;
+  width: 20px;
+  bottom: 30px;
+}
+.starContainer2 {
+  position: relative;
+  left: 25px;
+  width: 20px;
+  bottom: 30px;
+}
+.starContainer3 {
+  position: relative;
+  left: 45cm;
+  bottom: 30px;
+  width: 20px;
+}
+.starContainer4 {
+  position: relative;
+  left: 43rem;
+  bottom: 10rem;
+  width: 20px;
+}
+.starContainer5 {
+  position: relative;
+  left: 47rem;
+  bottom: 10rem;
+  width: 20px;
+}
+.starContainer6 {
+  position: relative;
+  left: 110rem;
+  bottom: 40rem;
+  width: 20px;
+}
+.starContainer7 {
+  position: relative;
+  left: 100rem;
+  bottom: 40rem;
+  width: 20px;
+}
+
+.starImage {
+  width: 40px;
+  height: 40px;
+}
+.secondcontainer {
+  width: 100%;
+  height: 6500px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 100px;
+  position: relative;
+  justify-content: center;
 }
 
 .secondWordContainer {
-  // display: flex;
-  // flex-direction: row;
-  align-items: flex-start;
+  margin: 300px;
+  position: sticky;
+  top: 200px;
+  bottom: 200px;
   font-family: "Lato", sans-serif;
-  line-height: 0;
   color: $firstColor;
 }
 
-.secondContainer {
-  position: relative;
+.imagesContainerLeft {
+  margin-top: 1000px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #dedee2;
-  overflow: hidden; 
-  z-index: -4;
+}
+
+.imagesContainerRight {
+  margin-top: 1000px;
+}
+
+.show {
+  margin-top: 220px;
+}
+
+.hidden {
+  opacity: 0;
+  margin-top: 220px;
+}
+
+.firstBoatImageContainer {
+  position: absolute;
+  left: 0;
+  top: 120vh;
+}
+
+.secondBoatImageContainer {
+  position: absolute;
+  right: 0;
+  top: 220vh;
+}
+
+.thirdBoatImageContainer {
+  position: absolute;
+  left: 0;
+  top: 270vh;
+}
+
+.firstBoatImage {
+  width: 550px;
+  height: 780px;
+}
+
+.thirdBoatImage {
+  width: 600px;
+  height: 500px;
+}
+
+.secondBoatImage {
+  width: 550px;
+  height: 300px;
+}
+
+.fourthBoatImage {
+  width: 550px;
+  height: 780px;
+}
+
+.fourthBoatImageContainer {
+  position: absolute;
+  right: 70px;
+  top: 340vh;
 }
 
 .leftedWord h1 {
@@ -99,6 +253,7 @@ $secondColor: #e1921a;
   padding-right: 1cm;
   font-size: 3.5rem;
   margin-top: 65px;
+  opacity: 1;
 }
 
 .rightedWord h1 {
@@ -107,79 +262,271 @@ $secondColor: #e1921a;
   font-size: 5rem;
   line-height: 0;
   font-weight: 550;
+  opacity: 1;
 }
 
-.firstBoatImageContainer {
+.changedBackground {
+  background-color: #889fb5;
+  background-color: $thirdColor;
+}
+
+.bottom {
   position: absolute;
+  right: 300px;
+  overflow-y: hidden;
+  bottom: 260px;
+  padding-left: 1000px;
+}
+
+.font {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  color: $firstColor;
+}
+
+.thirdContainer {
+  position: relative;
+  width: 100%;
+  background-color: $thirdColor;
+  margin: 0;
+  overflow: hidden;
+}
+
+.thirdContainerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $thirdColor;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.fontCelebrate {
+  color: $fourthColor;
+  font-size: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.watchOurCelebrationFont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $fourthColor;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  padding-top: 20px;
+  flex: 1;
+}
+.fontCelebrateContainer {
+  position: absolute;
+}
+
+.celebrateFont {
+  font-weight: lighter;
+}
+
+.withFont {
+  font-weight: 700;
+}
+
+.usFont {
+  font-weight: 700;
+}
+
+.watchOurCelebrationContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.icon {
+  position: relative;
+  top: 19px;
+  left: 140px;
+  color: $fourthColor;
+}
+
+.tradeOurMileContainer {
+  padding-top: 90px;
+  opacity: 0;
+  display: flex;
+  margin-left: 80px;
+}
+
+.tradeOurMileFont {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
   left: 0;
-  top: -100vh;
-  z-index: -3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.secondBoatImageContainer {
-  position: absolute;
-  right: 0;
-  top: -100vh;
-  z-index: -3;
-  // width:700px;
-  // height: 15px;
-}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+  }
 
-.secondBoatImage {
-  width:500px;
-  height: 250px;
+  .imgBackgroundContainer {
+    width: 100%;
+    height: 100%;
+  }
 
-}
+  .lottieAnimationContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12vh;
+  }
 
+  .wordContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 350px;
+  }
 
+  .wordLine {
+    display: flex;
+    white-space: nowrap;
+    color: $firstColor;
+    margin-left: 2vw;
+  }
+  .word60 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
+    font-family: "Lato", sans-serif;
+  }
 
-.starContainer {
-  z-index: -1;
-  position: relative;
-  left: 50px;
-}
+  .word70,
+  .word80 {
+    display: inline-block;
+    margin: 0;
+  }
+  .thirdBoatImageContainer,
+  .fourthBoatImageContainer,
+  .secondBoatImageContainer,
+  .firstBoatImageContainer {
+    display: none;
+  }
 
-.starContainer1 {
-  position: relative;
-  left: 200px;
-  bottom: 30px;
-}
-.starContainer2 {
-  position: relative;
-  left: 25px;
-  bottom: 30px;
-}
-.starContainer3 {
-  position: relative;
-  left: 45cm;
-  bottom: 30px;
-}
-.starContainer4 {
-  position: relative;
-  left: 43rem;
-  bottom: 10rem;
-}
-.starContainer5 {
-  position: relative;
-  left: 47rem;
-  bottom: 10rem;
-}
-.starContainer6 {
-  position: relative;
-  left: 110rem;
-  bottom: 40rem;
-}
-.starContainer7 {
-  position: relative;
-  left: 100rem;
-  bottom: 40rem;
-}
+  .font {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    color: $firstColor;
+  }
+  .secondWordContainer {
+    position: sticky;
+    font-family: "Lato", sans-serif;
+    color: $firstColor;
+    animation: none;
+    transform: none;
+    position: relative;
+    opacity: 0;
+  }
 
-.starImage {
-  width: 40px;
-  height: 40px;
+  .secondcontainer {
+    width: 100%;
+    height: 320vh;
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    position: relative;
+    justify-content: center;
+  }
+
+  .bottom {
+    position: absolute;
+    right: 50px;
+    overflow-y: hidden;
+    bottom: 20vh;
+    padding-left: 2500px;
+    width: 80%;
+  }
+
+  .fontCelebrateContainer {
+    position: absolute;
+  }
+
+  .fontCelebrate {
+    color: $fourthColor;
+    font-size: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+  }
+
+  .thirdContainerWrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $thirdColor;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    bottom: 0vh;
+  }
+
+  .leftedWord h1 {
+    font-weight: 500;
+    text-align: left;
+    line-height: 0;
+    padding-right: 1cm;
+    font-size: 2.5rem;
+    margin-top: 65px;
+    opacity: 1;
+  }
+
+  .rightedWord h1 {
+    margin-top: 65px;
+    padding-left: 2cm;
+    font-size: 4rem;
+    line-height: 0;
+    font-weight: 550;
+    opacity: 1;
+  }
+
+  .imgBackground {
+    width: 100%;
+    height: 100%;
+    // z-index: -1;
+  }
+
+  .icon {
+    position: relative;
+    top: 19px;
+    left: 54px;
+    color: $fourthColor;
+  }
 }
-
-
-
-
